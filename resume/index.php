@@ -10,13 +10,13 @@
 <body>
 
     <div id="middle-bubble">
-        <img src="./images/login.png" alt="Login Photo" id="login-image">
+        <img src="./images/login.png" alt="Login Photo" class="log-sign-image">
         <div id="heading1">
             <h1>Login</h1>
         </div>
 
         <div id="heading2">
-            <h2>Don't Have an Account? <a href="./BE/signup.php" style="text-decoration: none;color:white";>SIGN UP!</a></h2>
+            <h2>Don't Have an Account? <a href="./pages/signup.php" style="text-decoration: none;color:white";>SIGN UP!</a></h2>
         </div>
 
         

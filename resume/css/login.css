@@ -19,7 +19,7 @@ body{
     position: relative;
 }
 
-#login-image {
+.log-sign-image {
     border-radius: 50%;
     height: 170px;
     top: -110px;
@@ -44,3 +44,9 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+#dob-input{
+   margin-top: 15px;
+   
+}
+
