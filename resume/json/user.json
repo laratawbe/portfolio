@@ -26,5 +26,12 @@
         "password": "foster987",
         "sex": "male",
         "birthdate": "1985-07-26"
+    },
+    {
+        "fullname": "lara tawbeh",
+        "username": "laratestq",
+        "password": "lara",
+        "sex": "male",
+        "birthdate": "2023-11-19"
     }
 ]

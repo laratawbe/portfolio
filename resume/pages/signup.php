@@ -20,7 +20,7 @@
         </div>
 
         <div id="content">
-            <form action="BE/sign.php" method="post">
+            <form action="../BE/signup.php" method="post">
 
                 <div id="username-input">
                     <label for="username">Username:</label>
