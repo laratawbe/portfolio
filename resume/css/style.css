@@ -1,0 +1,298 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+h1
+{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.h34left
+{
+    color: white;
+}
+
+.h3right
+{
+    color: #07798f;
+}
+
+/* h2
+{
+    color: #07798f;
+    
+} */
+
+img
+{
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.wrap
+{
+   padding-top: 40px;
+   padding-left: 40px;
+   
+}
+
+#leftsidebar-div
+{
+    float: left;
+    width: 30%;
+    min-height: 1080px;
+    background-color: #07798f;
+}
+
+/* #rightsidebar-div
+{
+    /* float: right; */
+    /* width:70%
+    margin:auto;
+} */ 
+
+/* #general-div
+{   
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+*/
+
+.wop
+{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+#hrleft
+{
+    height: 2.5px;
+    width:90%  ;
+    background: white;
+
+}
+
+#hrright{
+    height:3px;
+    background: #07798f;
+}
+
+.icon
+{
+    float: left ;
+    padding-right: 10px;
+}
+
+#addressicon-div
+{
+    margin-left: -25px;
+}
+
+.paddingbottom
+{
+    padding-bottom: 10px;
+}
+
+.paddingtop
+{
+    padding-top: 10px;
+}
+
+.white
+{
+    color: white;
+    
+}
+
+#wrapright-div
+{
+    margin-left: 365px;
+
+}
+
+.title
+{
+    font-weight: 750;
+    padding-bottom: 3px;
+}
+
+.date
+{
+    color: #07798f;
+    padding-bottom: 3px;
+}
+
+.indented
+{
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.linkB{
+    color: black;
+    text-decoration: none;
+}
+
+.hide
+{
+    display: none;
+}
+
+.div:hover +.hide{
+    display:block;
+    color: red;
+
+}
+
+.container
+{
+    width: 90%;
+    background-color: grey  ;
+}
+
+.skills
+{
+    text-align: right;
+    color: white;
+}
+
+.java{
+    width: 90%;
+    background-color:#117186 ;
+}
+
+.html-css
+{
+    width:30%;
+    background-color: #117186;
+
+}
+
+.C
+{
+    width: 60%;
+    background-color: #117186;
+}
+
+.mssql
+{
+    width:70%;
+    background-color: #117186;
+}
+
+.Django
+{
+    width:20%;
+    background-color: #117186;
+}
+
+.Mo
+{
+    width:90%;
+    background-color: #117186;
+}
+
+.mysql
+{
+    width:70%;
+    background-color: #117186;
+}
+
+#navigation {
+    position: sticky;
+    top: 0;
+    background-color: #07798f;
+    text-align: start;
+    padding: 10px;
+    z-index: 100;
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+
+.menu{
+    float: right;    
+    margin-top: -5px;
+}
+
+.menu li{
+    display: inline;
+   
+    
+}
+
+#contact-me {
+    float: left;
+    width: 30%;
+    min-height: 300px; 
+    background-color: #07798f;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#contact-me h3 {
+    color: white;
+}
+
+#contact-me ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-me ul li {
+    margin-bottom: 10px;
+}
+
+#contact-me a {
+    color: white;
+    text-decoration: none;
+}
+
+/* #contact-me a:hover {
+    text-decoration: underline;
+} */
+
+
+#other-info {
+    float: left;
+    width: 30%;
+    min-height: 300px; 
+    background-color: #07798f;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; 
+    margin-top: 20px;
+    padding: 20px;
+}
