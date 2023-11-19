@@ -25,43 +25,56 @@
 
     <h1 id="gallery">Gallery</h1>
 
-    <div class="gallery">
-   
-            <label for="img1">
-                <img src="../images/image1.jpg" class="my-img">
-            </label>
-            <input type="checkbox" id="img1" class="image-checkbox">
-            <div class="image-popup">
-                <a href="../pages/gallery.html"><img src="../images/image1.jpg"></a>
-            </div>
-        
-       
-            <label for="img2">
-                <img src="../images/image2.jpg" class="my-img">
-            </label>
-            <input type="checkbox" id="img2" class="image-checkbox">
-            <div class="image-popup">
-                <a href="../pages/gallery.html"><img src="../images/image2.jpg"></a>
-            </div>
-      
-
-
-      
-            <label for="img3">
-                <img src="../images/image3.jpg" class="my-img">
-            </label>
-            <input type="checkbox" id="img3" class="image-checkbox">
-            <div class="image-popup">
-                <a href="../pages/gallery.html"><img src="../images/image3.jpg"></a>
-            </div>
-        
-
-
-        
+    <div class="gallery" id="dynamic-gallery">
 
         
     </div>
     
+
+    <script>
+       
+        fetch('../json/gallery.json')
+            .then(response => response.json())
+            .then(data => {
+                
+                const galleryContainer = document.getElementById('dynamic-gallery');
+
+               
+                data.images.forEach(imageName => {
+                    const label = document.createElement('label');
+                    label.setAttribute('for', imageName);
+
+                    const img = document.createElement('img');
+                    img.src = `../images/${imageName}`;
+                    img.classList.add('my-img');
+
+                    label.appendChild(img);
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = imageName;
+                    checkbox.classList.add('image-checkbox');
+
+                    const popupContainer = document.createElement('div');
+                    popupContainer.classList.add('image-popup');
+
+                    const popupLink = document.createElement('a');
+                    popupLink.href = `../pages/gallery.php`;
+
+                    const popupImg = document.createElement('img');
+                    popupImg.src = `../images/${imageName}`;
+
+                    popupLink.appendChild(popupImg);
+                    popupContainer.appendChild(popupLink);
+
+                    galleryContainer.appendChild(label);
+                    galleryContainer.appendChild(checkbox);
+                    galleryContainer.appendChild(popupContainer);
+                });
+            })
+            .catch(error => console.error('Error loading gallery:', error));
+    </script>
+
 
 
 
