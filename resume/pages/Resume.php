@@ -1,4 +1,9 @@
-
+<?php
+session_start();
+if (!isset($_SESSION["username"])) {
+  header("location:../index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +12,40 @@
     <title>Lara Tawbeh CV</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/logout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   
-        <div id="navigation" class="clearfix">
-            
-            <a href="#general-div">Contact</a>
-            <a href="#education-div">Education</a>
-            <a href="#experience-div">Experience</a>
-            <a href="#projects-div">Projects</a>
-            <a href="#technicalskills-div">Skills</a>
-            <a href="#softskills-div">Soft Skills</a>
-            <a href="#volunterring-div">Volunteering</a>
+<div id="navigation" class="clearfix">
+        <a href="home.php">
+            <i class="ico ico-l home-ico"></i>Home
+        </a>
+        <a href="Resume.php">
+            <i class="ico ico-l resume-ico"></i> CV
+        </a>
+        <a href="gallery.php">
+            <i class="ico ico-l gallery-ico"></i>Gallery
+        </a>
 
-
-            <div class="menu">
-                <a href="home.php">
-                    <li><i class="ico ico-l home-ico"></i>Home</li>
-                </a>
-                <a href="ContactInfo.php">
-                    <li><i class="ico ico-l user-ico"></i>Contact Info</li>
-                </a>
-                <a href="gallery.php">
-                    <li><i class="ico ico-l gallery-ico"></i>Gallery</li>
-                </a>
-    
-            </div>
-
+        <div id="hello-user">
+             <?php
+                 echo '<span id="welcome">' . (isset($_SESSION['username']) ? 'Hello, ' . $_SESSION['username'] : '') . '</span>';
+                 echo '<span class="logout"><a href="../BE/logout.php" class="anchor">Logout</a></span>';
+            ?>
         </div>
 
+     
+    </div>
+
+  
+
     <div id="wrapper-div" class="clearfix"> 
+
+
         <div id="leftsidebar-div"> 
+            
             <div id="wrapleft-div" class="wrap">
+                
                 <div id="general-div" class="wop">
                     <h1 id="name">Lara Tawbeh</h1>
                     <img src="../images/ana.png" alt="Lara Tawbeh photo"/>

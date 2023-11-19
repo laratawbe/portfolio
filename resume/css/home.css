@@ -1,25 +1,29 @@
-body{ 
+body {
     box-sizing: border-box;
     margin: 0;
-    padding-top: 40px; 
-    background-image: url('../images/bg.jpeg'); 
+    padding-top: 40px;
+    background-image: url('../images/bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-.row{
+
+.row {
     display: block;
     width: 100%;
 }
 
-#header{
+#header {
     background: #07798f;
     height: 40px;
     position: fixed;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#dropdown-menu{
+#dropdown-menu {
     cursor: pointer;
     display: inline-block;
     height: 40px;
@@ -34,11 +38,15 @@ body{
     text-align: center;
 }
 
-.dropdown-content{
+#dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
     cursor: pointer;
     display: none;
-    background:#07798f;
-    position: relative;
+    background: #07798f;
+    position: absolute;
     min-width: 160px;
     z-index: 1;
     left: 0;
@@ -46,42 +54,28 @@ body{
     font-size: medium;
 }
 
-#dropdown-menu li{
+#dropdown-menu li {
     text-align: center;
     list-style-type: none;
 }
 
-#dropdown-menu ul{
+#dropdown-menu ul {
     margin: 0;
     padding: 0;
 }
 
-#dropdown-menu:hover .dropdown-content{
-    display: block;
+#dropdown-menu li:hover {
+    background: #07798f;
 }
 
-#dropdown-menu li:hover{ 
-    background:#07798f;
-}
-
-.dropdown-content.menu-rtl{
+.dropdown-content.menu-rtl {
     float: right;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     color: white;
     text-decoration: none;
 }
-
-
-
-/* footer {
-    background-color: #07798f;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    
-} */
 
 #middle-bubble {
     background-color: #07798f;
@@ -89,29 +83,28 @@ body{
     width: 80%;
     border-radius: 15px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    min-height: calc(100vh - 40px); 
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
     position: relative;
 }
 
 #profile-image {
-    width: 150px; 
+    width: 150px;
     border-radius: 50%;
     background-color: white;
     top: -80px;
     position: absolute;
 }
 
-#middle-bubble p{
+#middle-bubble p {
     padding: 30px;
 }
 
-#name{
-    position:absolute;
+#name {
+    position: absolute;
     top: 70px;
 }
-
 
 #content {
     background-color: white;
@@ -124,3 +117,5 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+

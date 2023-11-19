@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["username"])) {
+  header("location:../index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +13,7 @@
     
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/logout.css">
 </head>
 <body>
 
@@ -28,6 +35,12 @@
                 </ul>
             </div>
         </div>
+        <div id="hello-user">
+      <?php
+        echo '<span id="welcome">' . (isset($_SESSION['username']) ? 'Hello, ' . $_SESSION['username'] : '') . '</span>';
+        echo '<span class="logout"><a href="../BE/logout.php" class="anchor">Logout</a></span>';
+    ?>
+    </div>
     </div>
 
     <div id="middle-bubble">

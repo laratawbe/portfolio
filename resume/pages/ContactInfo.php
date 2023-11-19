@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!isset($_SESSION["username"])) {
+  header("location:../index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +12,7 @@
     <title>Contact Me - Lara Tawbeh CV</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/logout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -19,9 +26,23 @@
         <a href="gallery.php">
             <i class="ico ico-l gallery-ico"></i>Gallery
         </a>
+
+        <div id="hello-user">
+             <?php
+                 echo '<span id="welcome">' . (isset($_SESSION['username']) ? 'Hello, ' . $_SESSION['username'] : '') . '</span>';
+                 echo '<span class="logout"><a href="../BE/logout.php" class="anchor">Logout</a></span>';
+            ?>
+        </div>
+
+     
     </div>
+  
+   
 
     <div id="wrapper-div" class="clearfix"> 
+
+
+
         <div id="leftsidebar-div"> 
             <div id="wrapleft-div" class="wrap">
                

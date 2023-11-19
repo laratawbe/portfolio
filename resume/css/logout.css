@@ -1,0 +1,32 @@
+#hello-user {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#welcome{
+    position: absolute;
+    left: 570px; 
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+#hello-user span {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+}
+
+#hello-user .logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.logout{
+    position: absolute;
+    right: 30px; 
+    font-size: 35px;
+    top: 50%;
+    transform: translateY(-50%)
+}
