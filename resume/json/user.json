@@ -1,0 +1,30 @@
+[
+    {
+        "fullname": "Emily Johnson",
+        "username": "emilyj",
+        "password": "emily123",
+        "sex": "female",
+        "birthdate": "1990-05-18"
+    },
+    {
+        "fullname": "Ryan Mitchell",
+        "username": "ryanm",
+        "password": "mitchell456",
+        "sex": "male",
+        "birthdate": "1988-12-03"
+    },
+    {
+        "fullname": "Jessica Taylor",
+        "username": "jessicat",
+        "password": "taylor567",
+        "sex": "female",
+        "birthdate": "1993-09-14"
+    },
+    {
+        "fullname": "Brandon Foster",
+        "username": "brandonf",
+        "password": "foster987",
+        "sex": "male",
+        "birthdate": "1985-07-26"
+    }
+]
