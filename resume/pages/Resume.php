@@ -26,10 +26,10 @@
                 <a href="home.php">
                     <li><i class="ico ico-l home-ico"></i>Home</li>
                 </a>
-                <a href="ContactInfo.html">
+                <a href="ContactInfo.php">
                     <li><i class="ico ico-l user-ico"></i>Contact Info</li>
                 </a>
-                <a href="gallery.html">
+                <a href="gallery.php">
                     <li><i class="ico ico-l gallery-ico"></i>Gallery</li>
                 </a>
     

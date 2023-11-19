@@ -33,5 +33,12 @@
         "password": "lara",
         "sex": "male",
         "birthdate": "2023-11-19"
+    },
+    {
+        "fullname": "a",
+        "username": "a",
+        "password": "a",
+        "sex": "male",
+        "birthdate": "2023-11-19"
     }
 ]

@@ -13,10 +13,10 @@
         <a href="home.php">
             <i class="ico ico-l home-ico"></i>Home
         </a>
-        <a href="Resume.html">
+        <a href="Resume.php">
             <i class="ico ico-l resume-ico"></i> CV
         </a>
-        <a href="gallery.html">
+        <a href="gallery.php">
             <i class="ico ico-l gallery-ico"></i>Gallery
         </a>
     </div>

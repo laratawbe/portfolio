@@ -14,10 +14,10 @@
             <a href="home.php">
                 <li><i class="ico ico-l home-ico"></i>Home</li>
             </a>
-            <a href="ContactInfo.html">
+            <a href="ContactInfo.php">
                 <li><i class="ico ico-l user-ico"></i>Contact Info</li>
             </a>
-            <a href="Resume.html">
+            <a href="Resume.php">
                 <li><i class="ico ico-l resume-ico"></i>CV</li>
             </a>
        

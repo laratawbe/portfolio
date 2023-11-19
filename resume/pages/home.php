@@ -16,13 +16,13 @@
             <div class="dropdown-content">
                 <ul>
 
-                    <a href="Resume.html">
+                    <a href="Resume.php">
                         <li><i class="ico ico-l resume-ico"></i>CV</li>
                     </a>
-                    <a href="gallery.html">
+                    <a href="gallery.php">
                         <li><i class="ico ico-l gallery-ico"></i>Gallery</li>
                     </a>
-                    <a href="ContactInfo.html">
+                    <a href="ContactInfo.php">
                         <li><i class="ico ico-l user-ico"></i>Contact Us!</li>
                     </a>
                 </ul>
